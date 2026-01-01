@@ -1,0 +1,607 @@
+--------------------------------------------------------------------
+ifconfig -a -L -b -m -r -v
+--------------------------------------------------------------------
+BEGIN: 13:35:44.423, END: 13:35:44.460
+--------------------------------------------------------------------
+lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 16384 rtref 0 index 1
+	eflags=10000000<SENDLIST>
+	xflags=4000004<NOAUTONX,INBAND_WAKE_PKT>
+	options=1203<RXCSUM,TXCSUM,TXSTATUS,SW_TIMESTAMP>
+	capabilities=1203<RXCSUM,TXCSUM,TXSTATUS,SW_TIMESTAMP>
+	hwassist=29000ff<CSUM_IP,CSUM_TCP,CSUM_UDP,CSUM_IP_FRAGS,CSUM_FRAGMENT,CSUM_TCPIPV6,CSUM_UDPIPV6,CSUM_FRAGMENT_IPV6,MULTIPAGES,TXSTATUS,SW_TIMESTAMP>
+	inet 127.0.0.1 netmask 0xff000000
+	inet6 ::1 prefixlen 128 
+	inet6 fe80::1%lo0 prefixlen 64 scopeid 0x1 
+	nd6 options=201<PERFORMNUD,DAD>
+	generation id: 1
+	type: 0x18 family: 1 subfamily: 0
+	functional type: loopback
+	link quality: 100 (good)
+	state availability: 0 (true)	link quality: 100 (good)
+	timestamp: disabled
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+XHC0: flags=0<> mtu 0 rtref 0 index 2
+	xflags=4000000<INBAND_WAKE_PKT>
+	generation id: 2
+	type: 0x1 family: 2 subfamily: 1
+	functional type: wired
+	link quality: -1 (unknown)
+	state availability: 0 (true)
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+pdp_ip7: flags=8010<POINTOPOINT,MULTICAST> mtu 1500 rtref 0 index 3
+	eflags=c004090<ADV_REPORT,TXSTART,EXPENSIVE,CHANNEL_DRV,CA>
+	xflags=20000<DELAYWAKEPKTEVENT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	netif: D938F970-2A1F-4DFD-A4AD-2E58CA9B671E
+	generation id: 3
+	type: Cellular (0xff) family: 15 subfamily: 0
+	functional type: cellular
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL 
+	link rate: 52.43 Mbps
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+pdp_ip3: flags=8010<POINTOPOINT,MULTICAST> mtu 1500 rtref 0 index 4
+	eflags=c004090<ADV_REPORT,TXSTART,EXPENSIVE,CHANNEL_DRV,CA>
+	xflags=20000<DELAYWAKEPKTEVENT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	netif: ABB4DF7E-BD3A-4620-B41A-2336CD633090
+	generation id: 4
+	type: Cellular (0xff) family: 15 subfamily: 0
+	functional type: cellular
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL 
+	link rate: 52.43 Mbps
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+pdp_ip6: flags=8010<POINTOPOINT,MULTICAST> mtu 1500 rtref 0 index 5
+	eflags=c004090<ADV_REPORT,TXSTART,EXPENSIVE,CHANNEL_DRV,CA>
+	xflags=20000<DELAYWAKEPKTEVENT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	netif: C6DD74A1-FAC0-4800-8233-AD94733D7B41
+	generation id: 5
+	type: Cellular (0xff) family: 15 subfamily: 0
+	functional type: cellular
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL 
+	link rate: 52.43 Mbps
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+pdp_ip1: flags=8010<POINTOPOINT,MULTICAST> mtu 1500 rtref 0 index 6
+	eflags=c004090<ADV_REPORT,TXSTART,EXPENSIVE,CHANNEL_DRV,CA>
+	xflags=20000<DELAYWAKEPKTEVENT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	netif: 28095E9C-AA8C-470E-86B9-3D2CE0A0784A
+	generation id: 6
+	type: Cellular (0xff) family: 15 subfamily: 0
+	functional type: cellular
+	agent domain:Cellular type:Em flags:0x79 desc:"CommCenter: Em.0"
+	agent domain:Cellular type:Em flags:0x79 desc:"CommCenter: Em.1"
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL 
+	link rate: 52.43 Mbps
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+pdp_ip4: flags=8010<POINTOPOINT,MULTICAST> mtu 1500 rtref 0 index 7
+	eflags=c004090<ADV_REPORT,TXSTART,EXPENSIVE,CHANNEL_DRV,CA>
+	xflags=20000<DELAYWAKEPKTEVENT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	netif: 6394E38E-EFBE-4CBD-A2E8-164DDB3AC597
+	generation id: 7
+	type: Cellular (0xff) family: 15 subfamily: 0
+	functional type: cellular
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL 
+	link rate: 52.43 Mbps
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+pdp_ip2: flags=8010<POINTOPOINT,MULTICAST> mtu 1500 rtref 0 index 8
+	eflags=c004090<ADV_REPORT,TXSTART,EXPENSIVE,CHANNEL_DRV,CA>
+	xflags=20000<DELAYWAKEPKTEVENT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	netif: 3FC45B69-2508-4486-9914-45CCABD1399C
+	generation id: 8
+	type: Cellular (0xff) family: 15 subfamily: 0
+	functional type: cellular
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL 
+	link rate: 52.43 Mbps
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+pdp_ip5: flags=8010<POINTOPOINT,MULTICAST> mtu 1500 rtref 0 index 9
+	eflags=c004090<ADV_REPORT,TXSTART,EXPENSIVE,CHANNEL_DRV,CA>
+	xflags=20000<DELAYWAKEPKTEVENT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	netif: FB845703-7EDF-45DE-8BAE-296FCD8FF451
+	generation id: 9
+	type: Cellular (0xff) family: 15 subfamily: 0
+	functional type: cellular
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL 
+	link rate: 52.43 Mbps
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+pdp_ip8: flags=8010<POINTOPOINT,MULTICAST> mtu 1500 rtref 0 index 10
+	eflags=c004090<ADV_REPORT,TXSTART,EXPENSIVE,CHANNEL_DRV,CA>
+	xflags=20000<DELAYWAKEPKTEVENT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	netif: FB12E316-B1C8-4180-80C5-09C4CB59A06D
+	generation id: 10
+	type: Cellular (0xff) family: 15 subfamily: 0
+	functional type: cellular
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL 
+	link rate: 52.43 Mbps
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+pdp_ip0: flags=8010<POINTOPOINT,MULTICAST> mtu 1500 rtref 0 index 11
+	eflags=c004090<ADV_REPORT,TXSTART,EXPENSIVE,CHANNEL_DRV,CA>
+	xflags=20000<DELAYWAKEPKTEVENT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	netif: DE43A343-64DA-4915-8745-47D1C4C11185
+	generation id: 11
+	type: Cellular (0xff) family: 15 subfamily: 0
+	functional type: cellular
+	agent domain:Cellular type:BootstrapProvisioning flags:0x79 desc:"CommCenter: BootstrapProvisioning.1"
+	agent domain:Cellular type:BootstrapProvisioning flags:0x79 desc:"CommCenter: BootstrapProvisioning.0"
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL 
+	link rate: 52.43 Mbps
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+pdp_ip10: flags=8010<POINTOPOINT,MULTICAST> mtu 1500 rtref 0 index 12
+	eflags=c000090<ADV_REPORT,TXSTART,CHANNEL_DRV,CA>
+	xflags=20000<DELAYWAKEPKTEVENT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	netif: A436A6C7-5DB0-4069-BA66-868CC285E778
+	generation id: 12
+	type: Cellular (0xff) family: 15 subfamily: 0
+	functional type: cellular
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL 
+	link rate: 52.43 Mbps
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+pdp_ip9: flags=8010<POINTOPOINT,MULTICAST> mtu 1500 rtref 0 index 13
+	eflags=c004090<ADV_REPORT,TXSTART,EXPENSIVE,CHANNEL_DRV,CA>
+	xflags=20000<DELAYWAKEPKTEVENT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	netif: B14068BA-DC5D-4B30-BDE9-4ECF9063217D
+	generation id: 13
+	type: Cellular (0xff) family: 15 subfamily: 0
+	functional type: cellular
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL 
+	link rate: 52.43 Mbps
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+ipsec0: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500 rtref 0 index 14
+	eflags=4002080<TXSTART,NOAUTOIPV6LL,CHANNEL_DRV>
+	xflags=4000004<NOAUTONX,INBAND_WAKE_PKT>
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	capabilities=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	hwassist=703000<CSUM_PARTIAL,CSUM_ZERO_INVERT,MULTIPAGES,TSO_V4,TSO_V6>
+	netif: 394B1B82-C201-4915-AFFF-27A838D0D6F8
+	flowswitch: A14DE944-DE7E-482C-BD90-096B5E9AF4CF
+	generation id: 14
+	type: 0x1 family: 18 subfamily: 0
+	agent domain:Skywalk type:FlowSwitch flags:0x4483 desc:"Userspace Networking"
+	agent domain:TelephonyIPSec type:TelephonyIPSec flags:0x3 desc:"CommCenter: TelephonyIPSec"
+	link quality: -1 (unknown)
+	state availability: 0 (true)
+	scheduler: FQ_CODEL 
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+ipsec1: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500 rtref 0 index 15
+	eflags=4002080<TXSTART,NOAUTOIPV6LL,CHANNEL_DRV>
+	xflags=4000004<NOAUTONX,INBAND_WAKE_PKT>
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	capabilities=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	hwassist=703000<CSUM_PARTIAL,CSUM_ZERO_INVERT,MULTIPAGES,TSO_V4,TSO_V6>
+	netif: AC0B2C41-010F-4665-8544-C7A51D3628B4
+	flowswitch: 75CC7137-6E68-4232-B1A5-0A04F10CB4F4
+	generation id: 15
+	type: 0x1 family: 18 subfamily: 0
+	agent domain:Skywalk type:FlowSwitch flags:0x4483 desc:"Userspace Networking"
+	agent domain:TelephonyIPSec type:TelephonyIPSec flags:0x3 desc:"CommCenter: TelephonyIPSec"
+	link quality: -1 (unknown)
+	state availability: 0 (true)
+	scheduler: FQ_CODEL 
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+ipsec2: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500 rtref 0 index 16
+	eflags=4002080<TXSTART,NOAUTOIPV6LL,CHANNEL_DRV>
+	xflags=4000004<NOAUTONX,INBAND_WAKE_PKT>
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	capabilities=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	hwassist=703000<CSUM_PARTIAL,CSUM_ZERO_INVERT,MULTIPAGES,TSO_V4,TSO_V6>
+	netif: DDCFE305-932C-42BD-AB7B-9125A5722D03
+	flowswitch: A6A5D5C3-6C17-45FC-9356-AB4E6AC55AE3
+	generation id: 16
+	type: 0x1 family: 18 subfamily: 0
+	agent domain:Skywalk type:FlowSwitch flags:0x4483 desc:"Userspace Networking"
+	agent domain:TelephonyIPSec type:TelephonyIPSec flags:0x3 desc:"CommCenter: TelephonyIPSec"
+	link quality: -1 (unknown)
+	state availability: 0 (true)
+	scheduler: FQ_CODEL 
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+ipsec3: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500 rtref 0 index 17
+	eflags=4002080<TXSTART,NOAUTOIPV6LL,CHANNEL_DRV>
+	xflags=4000004<NOAUTONX,INBAND_WAKE_PKT>
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	capabilities=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	hwassist=703000<CSUM_PARTIAL,CSUM_ZERO_INVERT,MULTIPAGES,TSO_V4,TSO_V6>
+	netif: 92708F39-3BFF-46C8-B6FC-23331894D6BD
+	flowswitch: 2F060E7F-41CA-4FCA-90DF-E466E85DF6D8
+	generation id: 17
+	type: 0x1 family: 18 subfamily: 0
+	agent domain:Skywalk type:FlowSwitch flags:0x4483 desc:"Userspace Networking"
+	agent domain:TelephonyIPSec type:TelephonyIPSec flags:0x3 desc:"CommCenter: TelephonyIPSec"
+	link quality: -1 (unknown)
+	state availability: 0 (true)
+	scheduler: FQ_CODEL 
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+ipsec4: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500 rtref 0 index 18
+	eflags=4002080<TXSTART,NOAUTOIPV6LL,CHANNEL_DRV>
+	xflags=4000004<NOAUTONX,INBAND_WAKE_PKT>
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	capabilities=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	hwassist=703000<CSUM_PARTIAL,CSUM_ZERO_INVERT,MULTIPAGES,TSO_V4,TSO_V6>
+	netif: 5200027B-C674-4622-9E8C-99928D4E2B2D
+	flowswitch: 976E4D9D-C74E-4BE2-A59D-CBE560FBEE96
+	generation id: 18
+	type: 0x1 family: 18 subfamily: 0
+	agent domain:Skywalk type:FlowSwitch flags:0x4483 desc:"Userspace Networking"
+	agent domain:TelephonyIPSec type:TelephonyIPSec flags:0x3 desc:"CommCenter: TelephonyIPSec"
+	link quality: -1 (unknown)
+	state availability: 0 (true)
+	scheduler: FQ_CODEL 
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+ap1: flags=8822<BROADCAST,SMART,SIMPLEX,MULTICAST> mtu 1500 rtref 0 index 19
+	eflags=44200080<TXSTART,NOACKPRI,CHANNEL_DRV,FASTLN_ON>
+	xflags=4000000<INBAND_WAKE_PKT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	ether ee:02:9d:60:8a:30
+	netif: 68374293-52FC-4B40-ABF3-21DA50FA457C
+	media: autoselect (none)
+	supported media:
+		media none
+		media autoselect
+	generation id: 19
+	type: Wi-Fi (0x6) family: 2 subfamily: 3
+	functional type: wifi
+	link quality: -1 (unknown)
+	state availability: 0 (true)
+	scheduler: FQ_CODEL (driver managed)
+	qosmarking enabled: yes mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500 rtref 0 index 20
+	eflags=44200090<ADV_REPORT,TXSTART,NOACKPRI,CHANNEL_DRV,FASTLN_ON>
+	xflags=4000000<INBAND_WAKE_PKT>
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	capabilities=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	hwassist=703000<CSUM_PARTIAL,CSUM_ZERO_INVERT,MULTIPAGES,TSO_V4,TSO_V6>
+	ether 26:74:7e:57:3c:4b
+	netif: 16B758AD-E43D-45DA-A251-DD56DBF98383
+	flowswitch: 68286867-C73D-4FEF-83D2-3F20476CF9D4
+	nd6 options=201<PERFORMNUD,DAD>
+	media: autoselect
+	status: inactive
+	supported media:
+		media autoselect
+	generation id: 20
+	type: Wi-Fi (0x6) family: 2 subfamily: 3
+	functional type: wifi
+	agent domain:Skywalk type:FlowSwitch flags:0x4483 desc:"Userspace Networking"
+	agent domain:WiFiUserInteractionMonitor type:WiFiTrafficAssertion flags:0x3d desc:"APPLE80211KEY_REAL_TIME_MEDIA_TRAFFIC_UUID"
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL (driver managed)
+	link rate: 53.95 Mbps
+	qosmarking enabled: yes mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+utun0: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500 rtref 0 index 21
+	eflags=2080<TXSTART,NOAUTOIPV6LL>
+	xflags=4000004<NOAUTONX,INBAND_WAKE_PKT>
+	inet6 fe80::b29d:4e4b:bf82:5a9a%utun0 prefixlen 64 scopeid 0x15 
+	nd6 options=201<PERFORMNUD,DAD>
+	generation id: 21
+	type: 0x1 family: 17 subfamily: 0
+	agent domain:com.apple.rapport type:RapportNetworkAgent flags:0x7c3 desc:"Rapport Network Agent"
+	link quality: -1 (unknown)
+	state availability: 0 (true)
+	scheduler: FQ_CODEL 
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+anpi0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500 rtref 0 index 22
+	eflags=80<TXSTART>
+	xflags=4002000<NOSHAPING,INBAND_WAKE_PKT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	ether 56:9d:10:ee:5c:25
+	netif: E92E166B-7ABE-40C6-9724-297672D1FE09
+	media: none
+	status: inactive
+	supported media:
+		media 100baseTX mediaopt full-duplex
+		media none
+	generation id: 22
+	type: USB Ethernet (0x6) family: 2 subfamily: 1
+	functional type: wired
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: UNKNOWN 
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+en1: flags=8822<BROADCAST,SMART,SIMPLEX,MULTICAST> mtu 1500 rtref 0 index 23
+	eflags=80<TXSTART>
+	xflags=4000000<INBAND_WAKE_PKT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	ether 1a:fa:b7:95:78:18
+	netif: 2F83D823-9E08-499D-89F1-DAF9B81D26DD
+	media: autoselect <full-duplex>
+	status: inactive
+	supported media:
+		media autoselect mediaopt full-duplex
+	generation id: 23
+	type: USB Ethernet (0x6) family: 2 subfamily: 1
+	functional type: wired
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: UNKNOWN 
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+en2: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500 rtref 0 index 24
+	eflags=80<TXSTART>
+	xflags=4000000<INBAND_WAKE_PKT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	ether 1a:fa:b7:95:78:e7
+	netif: 706122DE-0503-414F-BD14-334F143F2B65
+	flowswitch: 508DDDFD-4C2E-40D3-BE98-61A7EBABD8DB
+	nd6 options=201<PERFORMNUD,DAD>
+	media: none
+	status: inactive
+	supported media:
+		media 100baseTX mediaopt full-duplex
+		media none
+	generation id: 24
+	type: USB Ethernet (0x6) family: 2 subfamily: 1
+	functional type: wired
+	agent domain:Skywalk type:FlowSwitch flags:0x4483 desc:"Userspace Networking"
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: UNKNOWN 
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+awdl0: flags=8822<BROADCAST,SMART,SIMPLEX,MULTICAST> mtu 1500 rtref 0 index 25
+	eflags=443e0080<TXSTART,LOCALNET_PRIVATE,ND6ALT,RESTRICTED_RECV,AWDL,NOACKPRI,CHANNEL_DRV,FASTLN_ON>
+	xflags=4000000<INBAND_WAKE_PKT>
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	capabilities=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	hwassist=703000<CSUM_PARTIAL,CSUM_ZERO_INVERT,MULTIPAGES,TSO_V4,TSO_V6>
+	ether 52:02:a4:d7:43:38
+	inet6 fe80::5002:a4ff:fed7:4338%awdl0 prefixlen 64 scopeid 0x19 
+	netif: C51A58E7-4F1A-4E4D-9E1B-257A65FDA3E3
+	flowswitch: 668A2578-DEE1-4E74-A55F-C847F40995D1
+	nd6 options=201<PERFORMNUD,DAD>
+	media: autoselect (none)
+	status: inactive
+	supported media:
+		media none
+		media autoselect
+	generation id: 26
+	type: Wi-Fi (0x6) family: 2 subfamily: 3
+	functional type: awdl
+	agent domain:com.apple.wifip2pd type:AWDL flags:0x203 desc:"com.apple.wifip2pd AWDL"
+	agent domain:Skywalk type:FlowSwitch flags:0x4483 desc:"Userspace Networking"
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL (driver managed)
+	qosmarking enabled: yes mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+nan0: flags=8822<BROADCAST,SMART,SIMPLEX,MULTICAST> mtu 1500 rtref 0 index 26
+	eflags=443e0080<TXSTART,LOCALNET_PRIVATE,ND6ALT,RESTRICTED_RECV,AWDL,NOACKPRI,CHANNEL_DRV,FASTLN_ON>
+	xflags=4000000<INBAND_WAKE_PKT>
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	capabilities=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
+	hwassist=703000<CSUM_PARTIAL,CSUM_ZERO_INVERT,MULTIPAGES,TSO_V4,TSO_V6>
+	ether e6:83:a1:a7:62:46
+	inet6 fe80::e483:a1ff:fea7:6246%nan0 prefixlen 64 scopeid 0x1a 
+	netif: 1076C396-46B5-4118-90B3-534A9D0D4B81
+	flowswitch: 32085C17-F56E-459C-87A0-60C6E767B409
+	nd6 options=201<PERFORMNUD,DAD>
+	media: autoselect (none)
+	status: inactive
+	supported media:
+		media none
+		media autoselect
+	generation id: 25
+	type: Wi-Fi (0x6) family: 2 subfamily: 3
+	functional type: awdl
+	agent domain:com.apple.WiFiAware.NWAgent type:WiFiAware flags:0x103c3 desc:"NAN Agent"
+	agent domain:Skywalk type:FlowSwitch flags:0x4483 desc:"Userspace Networking"
+	link quality: -2 (off)
+	state availability: 0 (true)	link quality: -2 (off)
+	scheduler: FQ_CODEL (driver managed)
+	qosmarking enabled: yes mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+llw0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500 rtref 0 index 27
+	eflags=44200090<ADV_REPORT,TXSTART,NOACKPRI,CHANNEL_DRV,FASTLN_ON>
+	xflags=4000400<LOWLAT,INBAND_WAKE_PKT>
+	options=400<CHANNEL_IO>
+	capabilities=400<CHANNEL_IO>
+	ether 52:02:a4:d7:43:38
+	inet6 fe80::5002:a4ff:fed7:4338%llw0 prefixlen 64 scopeid 0x1b 
+	netif: CA9EB3C5-1D6B-4F58-9322-62A63CA544D7
+	nd6 options=201<PERFORMNUD,DAD>
+	media: autoselect (none)
+	supported media:
+		media autoselect
+	generation id: 27
+	type: Wi-Fi (0x6) family: 2 subfamily: 3
+	functional type: wifi
+	agent domain:Skywalk type:NetIf flags:0x4c3 desc:"Userspace Networking"
+	link quality: -1 (unknown)
+	state availability: 0 (true)
+	scheduler: FQ_CODEL 
+	qosmarking enabled: yes mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+utun1: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1380 rtref 0 index 28
+	eflags=2080<TXSTART,NOAUTOIPV6LL>
+	xflags=4000004<NOAUTONX,INBAND_WAKE_PKT>
+	inet6 fe80::3438:248e:664f:f5b5%utun1 prefixlen 64 scopeid 0x1c 
+	nd6 options=201<PERFORMNUD,DAD>
+	generation id: 28
+	type: 0x1 family: 17 subfamily: 0
+	link quality: -1 (unknown)
+	state availability: 0 (true)
+	scheduler: FQ_CODEL 
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+utun2: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 2000 rtref 0 index 29
+	eflags=2080<TXSTART,NOAUTOIPV6LL>
+	xflags=4000004<NOAUTONX,INBAND_WAKE_PKT>
+	inet6 fe80::d66d:e496:47f7:33a1%utun2 prefixlen 64 scopeid 0x1d 
+	nd6 options=201<PERFORMNUD,DAD>
+	generation id: 29
+	type: 0x1 family: 17 subfamily: 0
+	agent domain:ids501 type:clientchannel flags:0xc3 desc:"IDSNexusAgent ids501 : clientchannel"
+	link quality: -1 (unknown)
+	state availability: 0 (true)
+	scheduler: FQ_CODEL 
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+utun3: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1000 rtref 0 index 30
+	eflags=2080<TXSTART,NOAUTOIPV6LL>
+	xflags=4000004<NOAUTONX,INBAND_WAKE_PKT>
+	inet6 fe80::ce81:b1c:bd2c:69e%utun3 prefixlen 64 scopeid 0x1e 
+	nd6 options=201<PERFORMNUD,DAD>
+	generation id: 30
+	type: 0x1 family: 17 subfamily: 0
+	agent domain:ids501 type:transport flags:0x4c3 desc:"IDSTransportAgent ids501 : transport"
+	link quality: -1 (unknown)
+	state availability: 0 (true)
+	scheduler: FQ_CODEL 
+	qosmarking enabled: no mode: none
+	low power mode: disabled
+	multi layer packet logging (mpklog): disabled
+	routermode4: disabled
+	routermode6: disabled
+
