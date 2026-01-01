@@ -1,7 +1,9 @@
 # NeuralNet Forensic Analysis Report
+---
+
+**Version:** iOS 26.2
 
 **Analysis Date:** December 31, 2025  
-**Evidence Sources:** skywalk.txt, netstat.txt, ifconfig.txt, spindump-redacted.txt
 **System State:** Airplane Mode (confirmed active during capture)  
 **Classification:** Security Architecture Vulnerability
 
