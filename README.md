@@ -22,7 +22,7 @@ This repository documents my forensic investigation into iOS network behavior du
   ├── skywalk.txt           # Kernel flow-switch configs
   └── hashes.txt            # SHA-256 verification
 
-NeuralNet_forensic.md       # Complete forensic analysis (12 sections)
+NeuralNet_Forensic.md       # Complete forensic analysis (12 sections)
 README.md                   # This file
 ```
 
