@@ -1,0 +1,245 @@
+Date/Time:        2025-12-31 13:35:14.472 -0500
+End time:         2025-12-31 13:35:16.475 -0500
+OS Version:       iPhone OS 26.2 (Build 23C55)
+Architecture:     arm64e
+Report Version:   67
+
+Data Source:      Stackshots
+Shared Cache:     AF25FA78-AE3E-3BF4-B320-4404D3A36A77 slid base address 0x19bff4000, slide 0x1bff4000 (System Primary)
+Shared Cache:     A558B260-C8A6-3799-928A-771E5CCA44B1 slid base address 0x1972f8000, slide 0x172f8000 (DriverKit)
+
+Duration:         2.00s
+Duration Sampled: 2.25s (event ends 0.25s before samples end)
+Steps:            9 (250ms sampling interval)
+
+Hardware model:   iPhone15,3
+Active cpus:      6
+Memory size:      5.50 GB
+HW page size:     16384
+VM page size:     16384
+Shared cache residency: 10.51% (596.02 MB / 5673.58 MB)
+
+Time Since Boot:  519712s
+Time Awake Since Boot: 213606s
+Time Since Wake:  900s
+
+Total CPU Time:   4.057s (7.1G cycles, 11.7G instructions, 0.61c/i)
+Advisory levels:  Battery -> 2, User -> 3, ThermalPressure -> 0, Combined -> 2
+Free disk space:  15.62 GB/238.29 GB, low space threshold 150 MB
+Low Power Mode:   Enabled
+Vnodes Available: 58.82% (14117/24000, 12000 allocated, 12000 soft limit)
+Models:           none
+
+Launchd throttled processes:
+  security.cloudkeychainproxy3 throttled after exit(): throttled samples 1-8, not throttled sample 9
+
+Preferred User Language: en-US
+Country Code:     US
+Keyboards:        en_US QWERTY
+OS Cryptex File Extents: 10517
+
+------------------------------------------------------------
+Heavy format: stacks are sorted by count
+Use -i and -timeline to re-report with chronological sorting
+------------------------------------------------------------
+
+
+================================================================================
+REDACTED SPINDUMP - Only showing selected processes:
+  - mDNSResponder [10252]
+  - networkserviceproxy [11043]
+  - wifip2pd [15019]
+  - wifivelocityd [498]
+================================================================================
+
+
+
+================================================================================
+Process: mDNSResponder
+================================================================================
+
+Process:          mDNSResponder [10252]
+UUID:             F92AEA98-39C4-3ED5-8E19-4EA61ACE504A
+Path:             /usr/sbin/mDNSResponder
+Shared Cache:     AF25FA78-AE3E-3BF4-B320-4404D3A36A77 slid base address 0x19bff4000, slide 0x1bff4000 (System Primary)
+Architecture:     arm64e
+Parent:           launchd [1]
+UID:              65
+Sudden Term:      Tracked
+Memory Limit:     9MB
+Jetsam Priority:  140
+Footprint:        6624 KB
+Time Since Fork:  189103s
+Num samples:      9 (1-9)
+Note:             Has hardened heap
+Num threads:      3
+Note:             1 idle work queue thread omitted
+
+  Thread 0x147f6c    DispatchQueue "com.apple.main-thread"(1)    9 samples (1-9)    priority 31 (base 31)    last ran 2.165s ago
+  9  ??? (dyld + 20008) [0x19c10ee28]
+    9  ??? (mDNSResponder + 10008) [0x10035e718]
+      9  ??? (CoreFoundation + 632776) [0x19f19f7c8]
+        9  ??? (CoreFoundation + 117356) [0x19f121a6c]
+          9  ??? (CoreFoundation + 120904) [0x19f122848]
+            9  ??? (CoreFoundation + 288872) [0x19f14b868]
+              9  ??? (libsystem_kernel.dylib + 16476) [0x249b0105c]
+                9  ??? (libsystem_kernel.dylib + 16916) [0x249b01214]
+                  9  ??? (libsystem_kernel.dylib + 3284) [0x249afdcd4]
+                   *9  ??? (<ADA5094F-9E9A-3E99-851C-3AB372DE2F1B> + 132532) [0xfffffff007fcc5b4]
+
+  Thread 0x147f79    9 samples (1-9)    priority 31 (base 31)    last ran 2.130s ago
+  9  ??? (libsystem_pthread.dylib + 2252) [0x1fb9e78cc]
+    9  ??? (libsystem_pthread.dylib + 17484) [0x1fb9eb44c]
+      9  ??? (libsystem_kernel.dylib + 30928) [0x249b048d0]
+       *9  ??? (<ADA5094F-9E9A-3E99-851C-3AB372DE2F1B> + 5152548) [0xfffffff008495f24]
+
+  Binary Images:
+           0x10035c000 -                ???  mDNSResponder           <F92AEA98-39C4-3ED5-8E19-4EA61ACE504A>             /usr/sbin/mDNSResponder
+           0x19c10a000 -        0x19c1a8b37  dyld                    <A4040D49-9446-38E5-842B-EB8F9C971C22>             /usr/lib/dyld
+           0x19f105000 -        0x19f68b73f  CoreFoundation          <0BE54DBE-1ADC-3588-BFFA-E7C99E8D8208>             /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1fb9e7000 -        0x1fb9f344f  libsystem_pthread.dylib <741C5AFB-3F30-362E-9313-AAB3DE2497C9>             /usr/lib/system/libsystem_pthread.dylib
+           0x249afd000 -        0x249b37d2b  libsystem_kernel.dylib  <15E8A2AE-4BFD-3BB8-944E-2EC12393C59C>             /usr/lib/system/libsystem_kernel.dylib
+   *0xfffffff007fac000 - 0xfffffff0087f3fff  ??? (25.2.0)            <ADA5094F-9E9A-3E99-851C-3AB372DE2F1B>__TEXT_EXEC
+
+
+
+
+================================================================================
+Process: networkserviceproxy
+================================================================================
+
+Process:          networkserviceproxy [11043]
+UUID:             BB81CC22-D60C-345B-A52E-58821413CAD3
+Path:             /usr/libexec/networkserviceproxy
+Shared Cache:     AF25FA78-AE3E-3BF4-B320-4404D3A36A77 slid base address 0x19bff4000, slide 0x1bff4000 (System Primary)
+Architecture:     arm64e
+Parent:           launchd [1]
+UID:              501
+Sudden Term:      Tracked (allows idle exit)
+Memory Limit:     10MB
+Jetsam Priority:  0
+Footprint:        7664 KB
+Time Since Fork:  169782s
+Num samples:      9 (1-9)
+Num threads:      4
+Note:             2 idle work queue threads omitted
+
+  Thread 0x15f729    DispatchQueue "com.apple.main-thread"(1)    9 samples (1-9)    priority 4 (base 4)    last ran 1.796s ago
+  9  ??? (dyld + 20008) [0x19c10ee28]
+    9  ??? (networkserviceproxy + 660620) [0x104e4d48c]
+      9  ??? (Foundation + 38172) [0x19c75951c]
+        9  ??? (Foundation + 10260584) [0x19d119068]
+          9  ??? (CoreFoundation + 117356) [0x19f121a6c]
+            9  ??? (CoreFoundation + 120904) [0x19f122848]
+              9  ??? (CoreFoundation + 288872) [0x19f14b868]
+                9  ??? (libsystem_kernel.dylib + 16476) [0x249b0105c]
+                  9  ??? (libsystem_kernel.dylib + 16916) [0x249b01214]
+                    9  ??? (libsystem_kernel.dylib + 3284) [0x249afdcd4]
+                     *9  ??? (<ADA5094F-9E9A-3E99-851C-3AB372DE2F1B> + 132532) [0xfffffff007fcc5b4]
+
+  Thread 0x15f795    Thread name "com.apple.NSURLConnectionLoader"    9 samples (1-9)    priority 4 (base 4)    last ran 2004.333s ago
+  9  ??? (libsystem_pthread.dylib + 2252) [0x1fb9e78cc]
+    9  ??? (libsystem_pthread.dylib + 17484) [0x1fb9eb44c]
+      9  ??? (Foundation + 401948) [0x19c7b221c]
+        9  ??? (CFNetwork + 2395424) [0x1b3f3cd20]
+          9  ??? (CoreFoundation + 117356) [0x19f121a6c]
+            9  ??? (CoreFoundation + 120904) [0x19f122848]
+              9  ??? (CoreFoundation + 288872) [0x19f14b868]
+                9  ??? (libsystem_kernel.dylib + 16476) [0x249b0105c]
+                  9  ??? (libsystem_kernel.dylib + 16916) [0x249b01214]
+                    9  ??? (libsystem_kernel.dylib + 3284) [0x249afdcd4]
+                     *9  ??? (<ADA5094F-9E9A-3E99-851C-3AB372DE2F1B> + 132532) [0xfffffff007fcc5b4]
+
+  Binary Images:
+           0x104dac000 -                ???  networkserviceproxy     <BB81CC22-D60C-345B-A52E-58821413CAD3>             /usr/libexec/networkserviceproxy
+           0x19c10a000 -        0x19c1a8b37  dyld                    <A4040D49-9446-38E5-842B-EB8F9C971C22>             /usr/lib/dyld
+           0x19c750000 -        0x19d5bcc5f  Foundation              <DF782AC5-CC02-358C-A2F7-149703F5F44A>             /System/Library/Frameworks/Foundation.framework/Foundation
+           0x19f105000 -        0x19f68b73f  CoreFoundation          <0BE54DBE-1ADC-3588-BFFA-E7C99E8D8208>             /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1b3cf4000 -        0x1b40a9dff  CFNetwork               <103611C7-B684-34E7-B4D8-DE21613D60A5>             /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+           0x1fb9e7000 -        0x1fb9f344f  libsystem_pthread.dylib <741C5AFB-3F30-362E-9313-AAB3DE2497C9>             /usr/lib/system/libsystem_pthread.dylib
+           0x249afd000 -        0x249b37d2b  libsystem_kernel.dylib  <15E8A2AE-4BFD-3BB8-944E-2EC12393C59C>             /usr/lib/system/libsystem_kernel.dylib
+   *0xfffffff007fac000 - 0xfffffff0087f3fff  ??? (25.2.0)            <ADA5094F-9E9A-3E99-851C-3AB372DE2F1B>__TEXT_EXEC
+
+
+
+
+================================================================================
+Process: wifip2pd
+================================================================================
+
+Process:          wifip2pd [15019]
+UUID:             23396D90-88EB-30A7-ACCC-D6814489E3FA
+Path:             /usr/libexec/wifip2pd
+Shared Cache:     AF25FA78-AE3E-3BF4-B320-4404D3A36A77 slid base address 0x19bff4000, slide 0x1bff4000 (System Primary)
+Architecture:     arm64e
+Parent:           launchd [1]
+UID:              0
+Sudden Term:      Tracked (allows idle exit)
+Memory Limit:     9MB
+Jetsam Priority:  10
+Footprint:        5120 KB
+Time Since Fork:  35224s
+Num samples:      9 (1-9)
+CPU Time:         <0.001s (1289.5K cycles, 779.8K instructions, 1.65c/i)
+Num threads:      4
+Note:             3 idle work queue threads omitted
+
+  Thread 0x1fb721    9 samples (1-9)    priority 4 (base 4)    last ran 5645.066s ago
+  9  ??? (libdispatch.dylib + 87632) [0x1d7c3f650]
+    9  <patched truncated backtrace>
+      9  ??? (libsystem_kernel.dylib + 20948) [0x249b021d4]
+       *9  ??? (<ADA5094F-9E9A-3E99-851C-3AB372DE2F1B> + 5398140) [0xfffffff0084d1e7c]
+
+  Binary Images:
+           0x104424000 -                ???  wifip2pd               <23396D90-88EB-30A7-ACCC-D6814489E3FA>             /usr/libexec/wifip2pd
+           0x1d7c2a000 -        0x1d7c7021f  libdispatch.dylib      <11C047C4-33B3-39A3-AE43-BF617CFC7D2C>             /usr/lib/system/libdispatch.dylib
+           0x249afd000 -        0x249b37d2b  libsystem_kernel.dylib <15E8A2AE-4BFD-3BB8-944E-2EC12393C59C>             /usr/lib/system/libsystem_kernel.dylib
+   *0xfffffff007fac000 - 0xfffffff0087f3fff  ??? (25.2.0)           <ADA5094F-9E9A-3E99-851C-3AB372DE2F1B>__TEXT_EXEC
+
+
+
+
+================================================================================
+Process: wifivelocityd
+================================================================================
+
+Process:          wifivelocityd [498]
+UUID:             CD68B286-4229-3934-93E9-789A2A54F7ED
+Path:             /usr/libexec/wifivelocityd
+Shared Cache:     AF25FA78-AE3E-3BF4-B320-4404D3A36A77 slid base address 0x19bff4000, slide 0x1bff4000 (System Primary)
+Architecture:     arm64e
+Parent:           launchd [1]
+UID:              0
+Sudden Term:      Tracked (allows idle exit)
+Memory Limit:     9MB
+Jetsam Priority:  40
+Footprint:        6512 KB
+Time Since Fork:  519648s
+Num samples:      9 (1-9)
+Num threads:      2
+Note:             1 idle work queue thread omitted
+
+  Thread 0x1ad0    DispatchQueue "com.apple.main-thread"(1)    9 samples (1-9)    priority 4 (base 4)    last ran 7555.249s ago
+  9  ??? (dyld + 20008) [0x19c10ee28]
+    9  ??? (wifivelocityd + 615204) [0x10302a324]
+      9  ??? (wifivelocityd + 167328) [0x102fbcda0]
+        9  ??? (Foundation + 38172) [0x19c75951c]
+          9  ??? (Foundation + 10260584) [0x19d119068]
+            9  ??? (CoreFoundation + 117356) [0x19f121a6c]
+              9  ??? (CoreFoundation + 120904) [0x19f122848]
+                9  ??? (CoreFoundation + 288872) [0x19f14b868]
+                  9  ??? (libsystem_kernel.dylib + 16476) [0x249b0105c]
+                    9  ??? (libsystem_kernel.dylib + 16916) [0x249b01214]
+                      9  ??? (libsystem_kernel.dylib + 3284) [0x249afdcd4]
+                       *9  ??? (<ADA5094F-9E9A-3E99-851C-3AB372DE2F1B> + 132532) [0xfffffff007fcc5b4]
+
+  Binary Images:
+           0x102f94000 -                ???  wifivelocityd          <CD68B286-4229-3934-93E9-789A2A54F7ED>             /usr/libexec/wifivelocityd
+           0x19c10a000 -        0x19c1a8b37  dyld                   <A4040D49-9446-38E5-842B-EB8F9C971C22>             /usr/lib/dyld
+           0x19c750000 -        0x19d5bcc5f  Foundation             <DF782AC5-CC02-358C-A2F7-149703F5F44A>             /System/Library/Frameworks/Foundation.framework/Foundation
+           0x19f105000 -        0x19f68b73f  CoreFoundation         <0BE54DBE-1ADC-3588-BFFA-E7C99E8D8208>             /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x249afd000 -        0x249b37d2b  libsystem_kernel.dylib <15E8A2AE-4BFD-3BB8-944E-2EC12393C59C>             /usr/lib/system/libsystem_kernel.dylib
+   *0xfffffff007fac000 - 0xfffffff0087f3fff  ??? (25.2.0)           <ADA5094F-9E9A-3E99-851C-3AB372DE2F1B>__TEXT_EXEC
+
+
+
