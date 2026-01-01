@@ -1,4 +1,4 @@
-# NueralNet:  Analysis of Autonomous Mesh Topology
+# NeuralNet:  Analysis of Autonomous Mesh Topology
 ## Executive Summary
 
 This repository documents my forensic investigation into iOS network behavior during Airplane Mode.  Analysis of kernel telemetry reveals an autonomous mesh architecture that: 
@@ -22,7 +22,7 @@ This repository documents my forensic investigation into iOS network behavior du
   ├── skywalk.txt           # Kernel flow-switch configs
   └── hashes.txt            # SHA-256 verification
 
-NueralNet_forensic.md       # Complete forensic analysis (12 sections)
+NeuralNet_forensic.md       # Complete forensic analysis (12 sections)
 README.md                   # This file
 ```
 
@@ -264,7 +264,7 @@ Standard forensic methodology requires packet-level analysis.  **This architectu
 ## Documentation
 
 - **Quick overview:** This README (5 min)
-- **Complete analysis:** [NueralNet_Forensic.md](NueralNet_Forensic.md) (30 min)
+- **Complete analysis:** [NeuralNet_Forensic.md](NeuralNet_Forensic.md) (30 min)
   - Section 1-3: Hardware deception, volumetric analysis
   - Section 8: Temporal validation (spindump correlation)
   - Section 9: Architectural assessment (autonomous mesh node determination)
