@@ -1,14 +1,19 @@
-# NueralNet
+```
+  Artifact                : netstat.txt
+  SHA-256                 : b57e84f448867761dbbd1022b3142fe8bf10c2b8
+                            9010db40cd2de34a8f46dcb3
+  Process                 : networkserviceproxy
+  PID                     : 11043
+  Observed Data Transfer  : TX 12,708 B | RX 39,536 B
+  Endpoint                : fe80::d66d:e496:47f7:33a1
+  Endpoint Type           : IPv6 Link-Local
 
+---------------------------------------------------------------------
 
-| Provider                  | Observed Activity / Claim                                       | Response / Status                                                                               |
-| ------------------------- | --------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| **Google Cloud Platform** | Traffic from IP `142.250.188.228` exhibiting Heartbeat behavior | Google confirmed the IP is **not hosted on their cloud**. Ticket ID: PCE3F22YVGARDTIJSTZAIYLZFU |
-| **Amazon AWS**            | Traffic from IP `18.238.102.230` exhibiting Transport behavior  | Ticket ID: AWS-SEC-XXXXXX                                                                       |
-| **Akamai Security**       | Traffic from IP `23.32.1.178` exhibiting Resiliency behavior    | Reference ID: AK-IR-XXXXXX                                                            
-                                             
-**Notes:**
-* Observations reflect **what was seen**, not verified ownership or data content.
-* No assumptions are made about network contents.
-* Provider responses are included **as received**.
+  NOTES
+  -----
+  • Observations reflect what was seen, not verified ownership
+  • No assumptions are made about network contents
 
+=====================================================================
+```
