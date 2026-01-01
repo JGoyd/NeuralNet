@@ -244,6 +244,31 @@ Total: 84,524,362 bytes RX / 1,248,705 bytes TX
 
 **Additional Active Services:** replicatord (UDP ports 58234, 62596), fitnessintellig (UDP port 49910), symptomsd (TCP port 55582) maintain network bindings during Airplane Mode, forming distributed service ecosystem that collectively processes mesh traffic.
 
+
+## 4.3 AirDrop Attribution Analysis
+
+
+**sharingd Process State:**
+
+```
+Process:          sharingd [75]
+Jetsam Priority:  140 (high - protected)
+Footprint:        16.70 MB
+Time Since Fork:  519694s (144.4 hours)
+CPU Time:         <0.001s (essentially idle)
+Thread priority:  31 (base 31)
+```
+
+**AirDrop Exclusion:**
+
+The `sharingd` daemon (responsible for AirDrop, Handoff, Universal Clipboard) was running but shows **<0.001s CPU time** during the capture period when 84.5 MB was processed through mDNSResponder (PID 10252).
+
+**Traffic Attribution:**
+- mDNSResponder: 10252 → 84.5 MB processed
+- sharingd: 75 → <0.001s CPU (idle)
+
+**Conclusion:** Traffic cannot be attributed to AirDrop. The sharing daemon was inactive while mDNSResponder processed high-volume traffic, confirming traffic represents different functionality than documented peer-to-peer file transfer.
+
 ---
 
 ## 5. NETWORK TOPOLOGY
