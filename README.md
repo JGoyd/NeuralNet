@@ -75,7 +75,7 @@ netstat -I awdl0 | grep awdl0
 # Output: opackets:  2,657 ← ACTIVE TRANSMISSION
 ```
 
-**This was the moment I knew something was wrong. ** Interface reports "inactive" but kernel statistics show thousands of packets transmitted.
+**This was the moment I knew something was wrong** Interface reports "inactive" but kernel statistics show thousands of packets transmitted.
 
 **Step 4: Volume Analysis - The 84.5 MB Question**
 ```bash
@@ -84,7 +84,7 @@ grep mDNSResponder netstat. txt
 # Output: 84,524,362 bytes received (84.5 MB)
 ```
 
-**Standard mDNS discovery traffic is measured in kilobytes. ** 84.5 MB is **3 orders of magnitude** above normal.  This wasn't beaconing—this was data transfer.
+**Standard mDNS discovery traffic is measured in kilobytes.** 84.5 MB is **3 orders of magnitude** above normal.  This wasn't beaconing—this was data transfer.
 
 **Step 5: The "Shadow Node" Discovery**
 ```bash
@@ -94,7 +94,7 @@ ifconfig utun2 | grep -E "flags|agent"
 # Output: agent domain: ids501 type:clientchannel
 ```
 
-**The parallel stack. ** A kernel tunnel bound to IDS framework, running independently of user-controlled interfaces.
+**The parallel stack.** A kernel tunnel bound to IDS framework, running independently of user-controlled interfaces.
 
 **Step 6: Process Execution Validation**
 ```bash
@@ -103,7 +103,7 @@ grep "mDNSResponder \[10252\]" spindump. txt
 # Output: Runtime: 189,103s (52. 5 hours continuous)
 ```
 
-**Temporal proof. ** Same PID processing 84.5 MB in netstat appears in spindump with 52-hour runtime.  This isn't a glitch—it's persistent architecture.
+**Temporal proof.** Same PID processing 84.5 MB in netstat appears in spindump with 52-hour runtime.  This isn't a glitch—it's persistent architecture.
 
 ---
 
@@ -274,7 +274,6 @@ Standard forensic methodology requires packet-level analysis.  **This architectu
 ---
 
 **Analysis Date:** December 31, 2025  
-**Investigator:** JGoyd  
-**License:** CC BY-NC 4.0
+**Investigator:** Joseph Goydish II 
 
 **Note:** Findings represent architectural assessment based on system telemetry—the maximum forensic visibility available when packet capture is architecturally prevented. 
