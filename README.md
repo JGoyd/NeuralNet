@@ -7,14 +7,27 @@
 
 This repository documents my forensic investigation into iOS network behavior during Airplane Mode.  Analysis of kernel telemetry reveals an autonomous mesh architecture that: 
 
-- **Transmits 2,657 packets** while reporting interface status as "inactive"
-- **Processes 84.5 MB** through trusted system daemons during user-commanded isolation
-- **Operates via parallel kernel stack** (utun2 tunnel + IDS binding) that bypasses user control
-- **Prevents verification** through encrypted encapsulation and trusted process masquerading
+- Transmits 2,657 packets while reporting interface status as "inactive"
+- Processes 84.5 MB through trusted system daemons during user-commanded isolation
+- Operates via parallel kernel stack (utun2 tunnel + IDS binding) that bypasses user control
+- Prevents verification through encrypted encapsulation and trusted process masquerading
 
 **Key Finding:** Device functions as autonomous mesh node with operations concealed through false status reporting and kernel-level bypass architecture.
 
 ---
+
+## Independent Verification
+
+**Status:** Public disclosure and community validation ongoing → [Issue #1](https://github.com/JGoyd/NeuralNet/issues/1)
+
+| Researcher | Status | Platform | Evidence |
+|------------|--------|----------|----------|
+| [@srkorwho](https://github.com/srkorwho) | Verified | iPadOS 26.2 | [Comment](https://github.com/JGoyd/NeuralNet/issues/1#issuecomment-3703347988) |
+
+Researchers:  If you can reproduce these findings, please document in the issue thread.
+
+---
+
 
 ## Repository Structure
 
