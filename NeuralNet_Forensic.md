@@ -4,6 +4,7 @@
 **Evidence Sources:** skywalk.txt, netstat.txt, ifconfig.txt  
 **System State:** Airplane Mode (confirmed active during capture)  
 **Classification:** Security Architecture Vulnerability
+**Version iOS 26.2**
 
 ---
 
