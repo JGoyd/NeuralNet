@@ -1,22 +1,8 @@
-```
-  
-  Artifact                : netstat.txt
-  SHA-256                 : b57e84f448867761dbbd1022b3142fe8bf10c2b8
-                            9010db40cd2de34a8f46dcb3
-
-  Artifact                : skywalk.txt
-  SHA-256                 : 499b974a59b75633f25dce74efccf1ccd23f77a9
-                            f977c97361b9084dbe8f861a
-
-  Artifact                : ifconfig.txt
-  SHA-256                 : 546d00ee292a18207d9b85132c81f2d83750a738
-                            eb11ab26cf059f1d235a1488
-
----------------------------------------------------------------------
 
 
-=====================================================================
-```
+
+
+
 | Potential Objection                                 | Evidence / Report Section     | Response / Explanation                                                                                                                                                                                                                                                                      |
 | --------------------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **“This is just normal mDNS traffic”**              | Sections 4.2, 7.1, 12.1       | Observed volume: 84.5 MB (vs typical KB-scale for mDNS). Packet count (~2,994) and RX:TX ratio (67:1) exceed expected discovery traffic by 3+ orders of magnitude. Calculations in Section 11.2 show unrealistic beacon rates if this were legitimate discovery traffic.                    |
