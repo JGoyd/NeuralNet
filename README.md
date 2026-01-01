@@ -264,7 +264,7 @@ Standard forensic methodology requires packet-level analysis.  **This architectu
 ## Documentation
 
 - **Quick overview:** This README (5 min)
-- **Complete analysis:** [Nueralnet_Forensic.md](Nueralnet_Forensic.md) (30 min)
+- **Complete analysis:** [NueralNet_Forensic.md](NueralNet_Forensic.md) (30 min)
   - Section 1-3: Hardware deception, volumetric analysis
   - Section 8: Temporal validation (spindump correlation)
   - Section 9: Architectural assessment (autonomous mesh node determination)
