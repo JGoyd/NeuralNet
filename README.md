@@ -1,8 +1,7 @@
-# NueralNet:  Forensic Analysis of Airplane Mode Bypass Architecture
-
+# NueralNet:  Analysis of Autonomous Mesh Topology
 ## Executive Summary
 
-This repository documents my forensic investigation into iOS/macOS network behavior during Airplane Mode.  Analysis of kernel telemetry reveals an autonomous mesh architecture that: 
+This repository documents my forensic investigation into iOS network behavior during Airplane Mode.  Analysis of kernel telemetry reveals an autonomous mesh architecture that: 
 
 - **Transmits 2,657 packets** while reporting interface status as "inactive"
 - **Processes 84.5 MB** through trusted system daemons during user-commanded isolation
