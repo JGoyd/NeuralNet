@@ -1,4 +1,4 @@
-# NeuralNet Forensic Analysis Report
+# NueralNet Forensic Analysis Report
 
 **Analysis Date:** December 31, 2025  
 **Evidence Sources:** skywalk.txt, netstat.txt, ifconfig.txt  
